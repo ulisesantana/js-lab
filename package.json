@@ -1,0 +1,26 @@
+{
+  "name": "lab",
+  "version": "0.1.0",
+  "description": "This is my lab for testing stuff and do some proof of concept.",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "start:babel": "babel-node src/index.js",
+    "test": "mocha --require babel-core/register --ui tdd 'src/**/*.test.js'",
+    "tdd": "npm test -- --watch",
+    "build": "babel src -d build",
+    "dev": "nodemon --watch src --exec babel-node src/index.js"
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "Ulises Santana <ulisesanana@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-node8": "^1.2.0",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1"
+  }
+}
