@@ -1,0 +1,4 @@
+bruce wayne	cocktail	30	3
+bruce wayne	red bull	10	2
+barney stinson	whisky	40	4
+
